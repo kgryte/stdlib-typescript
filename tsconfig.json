@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": [
+      "es6"
+    ],
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "outDir": "./lib"
+  },
+  "include": [
+    "src/index.ts"
+  ]
+}

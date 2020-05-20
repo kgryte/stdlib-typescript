@@ -14,9 +14,14 @@
     }
   ],
   "main": "./lib",
-  "directories": {},
+  "directories": {
+    "lib": "./lib",
+    "src": "./src"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "npm run clean && tsc",
+    "build:error": "npm run clean && tsc --esModuleInterop --noEmitOnError --module commonjs --lib es6 --outDir ./lib ./src/error.ts",
+    "clean": "rimraf ./lib"
   },
   "homepage": "https://github.com/kgryte/stdlib-typescript",
   "repository": {
@@ -26,8 +31,13 @@
   "bugs": {
     "url": "https://github.com/kgryte/stdlib-typescript/issues"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "@stdlib/stdlib": "0.0.91"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.3"
+  },
   "keywords": [
     "stdlib",
     "typescript",
