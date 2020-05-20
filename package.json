@@ -1,0 +1,36 @@
+{
+  "name": "stdlib-typescript",
+  "version": "0.0.0",
+  "description": "Project demonstrating using stdlib in a TypeScript project.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Athan Reines",
+    "url": "https://github.com/kgryte"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "url": "https://github.com/kgryte"
+    }
+  ],
+  "main": "./lib",
+  "directories": {},
+  "scripts": {
+    "build": "tsc"
+  },
+  "homepage": "https://github.com/kgryte/stdlib-typescript",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/stdlib-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kgryte/stdlib-typescript/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "stdlib",
+    "typescript",
+    "ts"
+  ]
+}
